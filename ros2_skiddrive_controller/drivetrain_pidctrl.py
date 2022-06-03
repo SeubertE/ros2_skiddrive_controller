@@ -7,11 +7,13 @@ from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from freenove_interfaces.msg import Motor as MotorMsg
 import message_filters
-
+print('line 10 works')
 class drivebase_pidctrl(Node):
+    print('line 12 works')
     def __init__(self):
+        print('line 14 works')
         super().__init__('drivebase_pidctrl')
-
+        print('line 16 works')
         # Subscribers (need to be time synced)
         self.cmd_vel_sub = message_filters.Subscriber(Twist, '/cmd_vel')
         self.odom_sub = message_filters(Odometry, 'odom/filtered')

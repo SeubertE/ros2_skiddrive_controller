@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'drivetrain_pidctrl = drivetrain_pidctrl:main'
+            'drivetrain_pidctrl = ros2_skiddrive_controller.drivetrain_pidctrl:main'
         ],
     },
 )
